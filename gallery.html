@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<title>RAVEN — Archive</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+<div class="announcement">
+  <span>RAVEN® / THE ARCHIVE</span>
+  <span>COLLECTION 001</span>
+</div>
+
+<header>
+  <a class="logo" href="index.html">RAVEN<span>.</span></a>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a class="active" href="gallery.html">ARCHIVE</a>
+    <a href="gallery.html?category=Quotes">QUOTES</a>
+  </nav>
+  <a href="index.html" class="header-cta">BACK HOME ↗</a>
+</header>
+
+<main class="gallery-page">
+
+  <div class="gallery-intro">
+    <p class="eyebrow">01 / THE COLLECTION</p>
+    <h1>The <em>archive.</em></h1>
+    <p>A collection of visuals worth keeping.</p>
+  </div>
+
+  <div class="search-box">
+    <span>⌕</span>
+    <input id="searchInput" type="search"
+      placeholder="Search the collection...">
+  </div>
+
+  <div class="gallery-toolbar">
+    <div class="filters">
+      <button data-filter="all">ALL</button>
+      <button data-filter="Urban">URBAN</button>
+      <button data-filter="Abstract">ABSTRACT</button>
+      <button data-filter="Quotes">QUOTES</button>
+    </div>
+    <span id="resultCount">0 ITEMS</span>
+  </div>
+
+  <div id="galleryGrid" class="gallery-grid"></div>
+
+</main>
+
+<footer>
+  <a class="logo" href="index.html">RAVEN<span>.</span></a>
+  <p>INDEPENDENT DIGITAL ARCHIVE © <span data-year></span></p>
+  <a href="index.html">HOME ↑</a>
+</footer>
+
+<script src="wallpapers.js"></script>
+<script src="gallery.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

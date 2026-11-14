@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090909">
+<title>RAVEN — Archive</title>
+<link rel="stylesheet" href="style.css">
+<script src="wallpapers.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body data-page="archive">
+
+<div class="topline">
+  <span>RAVEN® / THE ARCHIVE</span>
+  <span>COLLECTION 001</span>
+</div>
+
+<header>
+  <a class="logo" href="index.html">RAVEN<span>.</span></a>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <nav id="nav">
+    <a href="index.html">HOME</a>
+    <a class="active" href="archive.html">ARCHIVE</a>
+    <a href="archive.html?type=phone&category=Quotes">QUOTES</a>
+  </nav>
+  <a class="header-link" href="index.html">BACK HOME ↗</a>
+</header>
+
+<main class="archive-page">
+  <section class="archive-intro">
+    <p class="eyebrow">01 / THE COLLECTION</p>
+    <h1>The <em>archive.</em></h1>
+    <p>Find the right visual for your screen.</p>
+  </section>
+
+  <section class="archive-controls">
+    <div class="type-tabs">
+      <button data-type="desktop">▱ DESKTOP</button>
+      <button data-type="phone">▯ PHONE</button>
+    </div>
+
+    <div class="subcategory-row" id="subcategories"></div>
+
+    <input
+      type="search"
+      id="search"
+      placeholder="Search the collection..."
+      aria-label="Search wallpapers"
+    >
+
+    <p class="result-count" id="result-count"></p>
+  </section>
+
+  <section class="wallpaper-grid" id="wallpaper-grid"></section>
+
+  <section class="empty-state" id="empty-state" hidden>
+    <p class="eyebrow">404 / NO MATCH</p>
+    <h2>Nothing in this corner.</h2>
+    <p>Try another category or search.</p>
+  </section>
+</main>
+
+<footer>
+  <a class="logo" href="index.html">RAVEN<span>.</span></a>
+  <p>INDEPENDENT DIGITAL CULTURE © <span data-year></span></p>
+  <a href="index.html">HOME ↗</a>
+</footer>
+
+<div id="toast" class="toast"></div>
+</body>
+</html>
